@@ -1,6 +1,6 @@
-	#include <stdio.h>
-	#include <stdlib.h>
-	#include <string.h>
+	#include<stdio.h>
+	#include<stdlib.h>
+	#include<string.h>
 	#include "queue.h"
 	//bankSimulator 10 2 100 5
 	Noud createCustomerList();
@@ -17,6 +17,7 @@
 		Queue myQueue;
 		srand(time(NULL));//Seed
 		char str[100];//My first string which I will Parse in ParseInput() function
+		printf("Enter 4 inputs with 'bankSimulator #Number of customers #Number of officers #Max arrival time #Max service time'  Ex: bankSimulator 10 2 100 5  \n");
 		gets(str);
 		ParseInput(str);
 		Noud head,tmp;
